@@ -6,9 +6,13 @@ function App() {
   return (
     <div className="App">
 
-      <Index name="hala"  age="22" haircolor="brown"/>
-      <Index name="Izz"  age="22" haircolor="Black"/>
-      <Index name="Zaki" age="22" haircolor="yellow"/>
+      
+      <Index name="hala"  age={22} haircolor="brown"/>
+   
+      <Index name="Izz"  age={22} haircolor="Black"/>
+
+      <Index name="Zaki" age={22} haircolor="yellow"/>
+    
     </div>
   );
 }
