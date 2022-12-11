@@ -4,10 +4,13 @@ import React, { useState } from  'react';
 const UserForm = (props) => {
     const [username, setUsername] = useState("");
     const [userNameError, setUserNameError] = useState("");
+
     const [email, setEmail] = useState("");
     const [emailError, setEmailError] = useState("");
+
     const [password, setPassword] = useState("");
     const [PasswordError, setPasswordError] = useState("");
+    
     const [Confirm, setConfirm] = useState("");
     const [ConfirmError, setConfirmError] = useState("");
     const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
@@ -112,7 +115,7 @@ const UserForm = (props) => {
 
                 <div>
                     <label>Password: </label>
-                    <input type="text" onChange={handlePassword} />
+                    <input type="password" onChange={handlePassword} />
                     {
                         PasswordError ?
                             <p style={{ color: 'red' }}>{PasswordError}</p> :
@@ -122,7 +125,7 @@ const UserForm = (props) => {
 
                 <div>
                     <label> Confirm Password: </label>
-                    <input type="text" onChange={handleConfirm} />
+                    <input type="password" onChange={handleConfirm} />
                     {
                         ConfirmError ?
                             <p style={{ color: 'red' }}>{ConfirmError}</p> :
