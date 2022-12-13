@@ -3,7 +3,10 @@
     
 const MessageDisplay = (props) => {
 
-    const style1={backgroundColor:props.message, }
+    const style1={
+                    backgroundColor:props.message,
+                 }
+
     return (
         <>
             <h1>Current Message</h1>
