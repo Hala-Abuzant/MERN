@@ -23,7 +23,7 @@ const Pokemon = () => {
    
     return (
       <div>
-        <button onClick={fetching}>fetching meeee....</button>
+        <button onClick={fetching}>get</button>
    
         {click
           ? people.map((person, index) => {

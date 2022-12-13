@@ -1,4 +1,4 @@
-const MessageDisplay = (props) => {
+const boxesDisplay = (props) => {
   return (
     <>
       <h1>Display Boxes</h1>
@@ -15,4 +15,4 @@ const MessageDisplay = (props) => {
   );
 };
 
-export default MessageDisplay;
+export default boxesDisplay;

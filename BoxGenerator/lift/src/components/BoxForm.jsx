@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 
-const MessageForm = (props) => {
+const BoxForm = (props) => {
   const [color, setColor] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,4 +24,4 @@ const MessageForm = (props) => {
   );
 };
 
-export default MessageForm;
+export default BoxForm;
