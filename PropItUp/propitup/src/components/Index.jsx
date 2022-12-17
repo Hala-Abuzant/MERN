@@ -4,6 +4,7 @@ export default class Index extends Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
         counter :this.props.age};
     };
@@ -18,7 +19,10 @@ export default class Index extends Component {
         <h1>{this.props.name}</h1>
         <p>Age : {this.state.counter}</p>
         <p>Haircolor: {this.props.haircolor}</p>
+
         <button onClick={this.increase}>Birthday</button>
+        {this.props.children}
+
       </div>
     )
   }

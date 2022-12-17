@@ -36,8 +36,8 @@ const pokémon = Object.freeze([
     // const pkmnFire = pokémon.filter( p => p.types.includes( "fire") );
     // console.log(pkmnFire);
 
-    // const pkmnOne = pokémon.filter( p => p.types.length > 1 ).map(x => x.types);
-    // console.log(pkmnOne);
+    const pkmnOne = pokémon.filter( p => p.types.length > 1 ).map(x => x.types);
+    console.log(pkmnOne);
 
     // const pkmnNames = pokémon.map( p => p.name )
     // console.log(pkmnNames);
@@ -48,5 +48,5 @@ const pokémon = Object.freeze([
     // const pkmnFlying = pokémon.filter( p => p.types[1]=="flying" ).map(x => x.types[0]);
     // console.log(pkmnFlying);
 
-    const pkmnNormal = pokémon.filter( p => p.types.includes("normal")).length;
-    console.log(pkmnNormal);
+    // const pkmnNormal = pokémon.filter( p => p.types.includes("normal")).length;
+    // console.log(pkmnNormal);
