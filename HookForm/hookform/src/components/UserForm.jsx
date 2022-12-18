@@ -95,7 +95,7 @@ const UserForm = (props) => {
               <h3>{formMessage()}</h3>
                 <div>
                     <label>Username: </label>
-                    <input type="text" onChange={handleUserName} />
+                    <input type="text" onChange={handleUserName} value={ username } />
 
                     {        userNameError ?
                             <p style={{ color: 'red' }}>{userNameError}</p> :
@@ -105,7 +105,7 @@ const UserForm = (props) => {
 
                 <div>
                     <label>Email Address: </label>
-                    <input type="text" onChange={handleEmail} />
+                    <input type="text" onChange={handleEmail} value={ email} />
                     {
                         emailError ?
                             <p style={{ color: 'red' }}>{emailError}</p> :
