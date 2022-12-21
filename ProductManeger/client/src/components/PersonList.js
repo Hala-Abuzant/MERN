@@ -3,12 +3,12 @@ import axios from 'axios';
 import { Link } from '@reach/router';
     
 const PersonList = (props) => {
-    // const { removeFromDom } = props;
+    const { removeFromDom } = props;
     
     const deletePerson = (personId) => {
         axios.delete('http://localhost:8000/api/people/' + personId)
             .then(res => {
-                // removeFromDom(personId)
+            removeFromDom(personId)
             })
             .catch(err => console.error(err));
     }

@@ -3,7 +3,9 @@ import axios from 'axios';
 // import { useParams } from "react-router-dom";
     
 const Update = (props) => {
+
     // const { id } = useParams();
+
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     
@@ -12,6 +14,7 @@ const Update = (props) => {
             .then(res => {
                 setFirstName(res.data.firstName);
                 setLastName(res.data.lastName);
+                
             })
     }, []);
     
